@@ -6,7 +6,7 @@ while estado==False:
         estado=True
         break
     except Exception:
-        print("Dame numero")
+        print("Dame numeros")
 if numN>0:
     print(f"Es positivo")
 elif numN==0:

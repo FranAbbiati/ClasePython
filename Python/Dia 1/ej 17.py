@@ -9,7 +9,7 @@ while estado==False:
         estado=True
         break
     except Exception:
-        print("Dame numero")
+        print("Dame numeros")
 imc=pesoN/(alturaN*alturaN)
 
 print(f"El IMC es: {imc}")

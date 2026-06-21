@@ -9,7 +9,7 @@ while estado==False:
         estado=True
         break
     except Exception:
-        print("Dame NUmeros")
+        print("Dame Numeros")
 montodes=precioON*descuentoN/100
 precioF=precioON-montodes
 

@@ -6,10 +6,12 @@ while estado==False:
         estado=True
         break
     except ValueError:
-        print("Elegi bien")
+        print("Error")
 if persona=="piedra":
     print("Empataste")
 elif persona=="papel":
     print("Ganaste")
-else:
+elif persona=="tijera":
     print("Perdiste")
+else:
+    print("Error")

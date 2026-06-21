@@ -10,7 +10,7 @@ while estado==False:
         estado=True
         break
     except Exception:
-        print("NUmero")
+        print("Decime un Numero")
 
 
 print(puedeVotar(edadN))

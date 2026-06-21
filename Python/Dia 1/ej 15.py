@@ -1,7 +1,7 @@
 estado=False
 while estado==False:
     try:
-        luz=input("Dame la luz del semaforo")
+        luz=input("Dame la luz del semaforo: ")
         estado=True
         break
     except ValueError:

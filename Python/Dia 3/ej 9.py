@@ -9,7 +9,7 @@ while estado==False:
         estado=True
         break
     except Exception:
-        print("DAme numero")
+        print("Dame numeros")
 descuentoR=descuentoN*100/precioN
 
 print(f"El precio final es {calcularPrecioFinal(precioN,descuentoR)}")
