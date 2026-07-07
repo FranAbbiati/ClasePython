@@ -1,23 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/Formulario.css">
+    <title>Formulario</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <h5><a href="./index.html">Volver a la Pagina Principal</a></h5>
-        </nav>
-        <img src="https://ipm.edu.ar/assets/img/logo.png"
-        alt="No se encontro"
-        width="40"
-        height="40">
+    <header class="encabezado">
+        <a href="./index.html">
+            <img src="https://ipm.edu.ar/assets/img/logo.png"
+            alt="Logo IPM"
+            class="logo">
+        </a>    
         <h1>Formulario</h1>
     </header>
     <main>
-        <form action="#" method="get">
+        <form class="formulario" action="#" method="get">
             <label for="nombre">Nombre:</label>
             <input type="text" 
                id="nombre" 
@@ -52,14 +51,12 @@
                 Acepto los terminos y condiciones
             </label>
             <br>
-            <button type="submit">Enviar formulario</button>
+            <button class="boton" type="submit">Enviar formulario</button>
         </form>
     </main>
     <footer>
         <h5>Creado por: Oriana y Francesca</h5>
-        <nav>
         <h5><a href="https://ipm.edu.ar" target="_blank">Contacto</a></h5>
-        </nav>
     </footer>
 </body>
 </html>

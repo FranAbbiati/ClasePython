@@ -1,15 +1,502 @@
-body{
-    background-color: rgb(140, 170, 224);
-}
-section{
-    width: auto;
-    height: auto;
-    background-color: rgb(70, 119, 165);
-    padding: 20px;
-    border: 5px solid rgb(28, 24, 87);
+/* ==========================
+        CONFIGURACIÓN GENERAL
+========================== */
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
 }
 
-h1{
-    font-style: italic;
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+
+body{
+
+    min-height:100vh;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:#102a43;
+
+    display:grid;
+
+    grid-template-rows:auto 1fr auto;
+
+}
+
+
+
+/* ==========================
+            HEADER
+========================== */
+
+
+.encabezado{
+
+    background:#0b1f33;
+
+    padding:25px 40px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:25px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.4);
+
+}
+
+
+
+.logo{
+
+    width:65px;
+
+    height:65px;
+
+    object-fit:contain;
+
+    transition:0.3s;
+
+}
+
+
+
+.logo:hover{
+
+    transform:scale(1.1);
+
+}
+
+
+
+.encabezado h1{
+
+    color:white;
+
+    font-size:38px;
+
+    font-style:italic;
+
+    text-align:center;
+
+}
+
+
+
+
+
+/* ==========================
+            MENU
+========================== */
+
+
+.menu{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:40px 0;
+
+}
+
+
+
+/* TARJETAS DE CATEGORÍA */
+
+
+.categoria{
+
+    background:#0b1f33;
+
+    padding:30px;
+
+    margin-bottom:35px;
+
+    border-radius:20px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,0.35);
+
+}
+
+
+
+/* TITULO DE CATEGORIA */
+
+
+.categoria h2{
+
+    color:#7ec8ff;
+
+    text-align:center;
+
+    font-size:30px;
+
+    margin-bottom:25px;
+
+    border-bottom:2px solid #7ec8ff;
+
+    padding-bottom:10px;
+
+}
+
+
+
+
+
+/* ==========================
+            PLATOS
+========================== */
+
+
+.plato{
+
+    list-style:none;
+
+    background:#163b5c;
+
+    border-radius:15px;
+
+    padding:20px;
+
+    margin:20px 0;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:25px;
+
+    transition:0.3s;
+
+}
+
+
+
+.plato:hover{
+
+    background:#1c527b;
+
+    transform:translateY(-5px);
+
+}
+
+
+
+
+
+.plato img{
+
+    width:150px;
+
+    height:110px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    border:3px solid #7ec8ff;
+
+}
+
+
+
+
+
+.plato div{
+
+    flex:1;
+
+}
+
+
+
+
+
+.plato h3{
+
+    color:white;
+
+    font-size:23px;
+
+    margin-bottom:10px;
+
+}
+
+
+
+
+
+.plato h5{
+
+    color:#d9ecff;
+
+    font-size:15px;
+
+    font-weight:normal;
+
+    line-height:1.4;
+
+}
+
+
+
+
+
+.plato h4{
+
+    color:#7ec8ff;
+
+    font-size:22px;
+
+    margin-top:10px;
+
+}
+
+
+
+
+
+/* ==========================
+        ENLACES INTERNOS
+========================== */
+
+
+.plato a{
+
+    color:#7ec8ff;
+
+    font-weight:bold;
+
+    text-decoration:none;
+
+}
+
+
+
+.plato a:hover{
+
+    color:white;
+
+    text-decoration:underline;
+
+}
+
+
+
+
+
+/* ==========================
+        LISTAS SIMPLES
+========================== */
+
+
+.categoria ul{
+
+    list-style:none;
+
+    color:white;
+
+    text-align:center;
+
+}
+
+
+
+.categoria li{
+
+    padding:12px;
+
+    font-size:18px;
+
+    background:#163b5c;
+
+    margin:10px;
+
+    border-radius:10px;
+
+}
+
+
+
+
+
+/* ==========================
+            FOOTER
+========================== */
+
+
+footer{
+
+    background:#0b1f33;
+
+    color:white;
+
+    padding:20px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+
+
+footer a{
+
+    color:#7ec8ff;
+
+    text-decoration:none;
+
+}
+
+
+
+footer a:hover{
+
+    color:white;
+
+}
+
+
+
+
+
+/* ==========================
+            TABLET
+========================== */
+
+
+@media(max-width:900px){
+
+
+    .encabezado h1{
+
+        font-size:30px;
+
+    }
+
+
+
+    .plato{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+
+
+    .plato img{
+
+        width:200px;
+
+        height:140px;
+
+    }
+
+
+}
+
+
+
+
+
+/* ==========================
+            CELULAR
+========================== */
+
+
+@media(max-width:480px){
+
+
+    .encabezado{
+
+        flex-direction:column;
+
+        padding:20px;
+
+    }
+
+
+
+    .encabezado h1{
+
+        font-size:24px;
+
+    }
+
+
+
+    .menu{
+
+        width:95%;
+
+    }
+
+
+
+    .categoria{
+
+        padding:15px;
+
+    }
+
+
+
+    .categoria h2{
+
+        font-size:24px;
+
+    }
+
+
+
+    .plato{
+
+        padding:15px;
+
+    }
+
+
+
+    .plato img{
+
+        width:100%;
+
+        height:180px;
+
+    }
+
+
+
+    footer{
+
+        flex-direction:column;
+
+        gap:10px;
+
+        text-align:center;
+
+    }
+
 
 }
