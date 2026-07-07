@@ -336,52 +336,30 @@ body{
 
 
 
-/* ==========================
-            FOOTER
-========================== */
+/*
+FOOTER
+*/
 
 
 footer{
-
     background:#0b1f33;
-
     color:white;
-
     padding:20px;
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
+    text-align:center;
 }
-
-
-
+footer h5{
+    margin:5px 0;
+}
 footer a{
-
     color:#7ec8ff;
-
     text-decoration:none;
-
 }
-
-
-
 footer a:hover{
-
     color:white;
-
 }
-
-
-
-
-
-/* ==========================
-            TABLET
-========================== */
+/*
+TABLET
+*/
 
 
 @media(max-width:900px){
