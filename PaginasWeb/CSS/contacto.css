@@ -1,0 +1,148 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    min-height:100vh;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#102a43;
+    display:grid;
+    grid-template-rows:auto 1fr auto;
+}
+.encabezado{
+    background:#0b1f33;
+    padding:25px 40px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:25px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.4);
+}
+.logo{
+    width:65px;
+    height:65px;
+    object-fit:contain;
+    transition:0.3s;
+}
+.logo:hover{
+    transform:scale(1.1);
+}
+.encabezado h1{
+    color:white;
+    font-size:38px;
+    font-style:italic;
+    text-align:center;
+}
+
+.persona{
+    list-style:none;
+    background:#163b5c;
+    border-radius:15px;
+    padding:20px;
+    margin:20px ;
+    display:flex;
+    align-items:left;
+    gap:25px;
+    transition:0.3s;
+    justify-content:space-between;
+}
+.persona:hover{
+    background:#1c527b;
+    transform:translateY(-5px);
+}
+.persona img{
+    width:130px;
+    height:130px;
+    object-fit:cover;
+    border-radius:500px;
+    border:3px solid #7ec8ff;
+    align-self: right;
+}
+.persona div{
+    flex:1;
+}
+.persona h3{
+    color:white;
+    font-size:23px;
+    margin-bottom:10px;
+}
+.persona h5{
+    color:#d9ecff;
+    font-size:15px;
+    font-weight:normal;
+    line-height:1.4;
+}
+.persona2 img{
+    align-items: right;
+}
+footer{
+    background:#0b1f33;
+    color:white;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    text-align: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer a:hover{
+    color:white;
+}
+
+   @media(max-width:900px){
+    .encabezado h1{
+        font-size:30px;
+    }
+    .persona{
+        flex-direction:column;
+        text-align:center;
+    }
+    .persona img{
+        width:130px;
+        height:130px;
+    }
+     footer{
+        flex-direction:column;
+        gap:10px;
+        text-align:center;
+    }
+}
+
+@media(max-width:480px){
+    .encabezado{
+        flex-direction:column;
+    }
+    .encabezado h1{
+        font-size:24px;
+        text-align: center;
+    }
+    .persona{
+        padding:15px;
+        align-items: center;
+    }
+    .persona2{
+        text-align:center; 
+    }
+    .persona img{
+        width:130px;
+        height:130px;
+    }
+    footer{
+        flex-direction:column;
+        gap:10px;
+        text-align:center;
+    }
+}
+ @media(min-width:900px){
+    .persona2{
+          justify-content:end; 
+        
+    }
+ }
