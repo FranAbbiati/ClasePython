@@ -35,10 +35,10 @@ impostor=random.choice(nombres)
 posicionImpostor=nombres.index(impostor)
 nombres.pop(posicionImpostor)
 
-import os
+import subprocess
 import time
 def limpiar_pantalla():
-    os.system('clear')
+    subprocess.run('cls', shell=True)
 
 for x in nombres:
     print(f"Ahora es el turno de {x}")
