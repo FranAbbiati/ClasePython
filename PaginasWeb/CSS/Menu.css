@@ -336,14 +336,17 @@ body{
 
 
 
-/*
-FOOTER
-*/
+/* ==========================
+            FOOTER
+========================== */
 
 
 footer{
+
     background:#0b1f33;
+
     color:white;
+
     padding:20px;
 
     display:flex;
@@ -367,6 +370,7 @@ footer a{
 
 
 footer a:hover{
+
     color:white;
 
 }

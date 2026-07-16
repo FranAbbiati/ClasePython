@@ -16,32 +16,27 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
-    justify-content:space-between;
     gap:20px;
     box-shadow:0 4px 10px rgba(0,0,0,.3);
 }
-.volver a{
-    color:#7ec8ff;
-    text-decoration:none;
-    font-weight:bold;
-    font-size:15px;
-}
-.volver a:hover{
-    color:white;
-}
-.titulo{
+
+.encabezado a{
     display:flex;
     align-items:center;
-    gap:20px;
+    text-decoration:none;
 }
-.titulo img{
+
+.logo{
     width:60px;
     height:60px;
 }
-.titulo h1{
+
+.encabezado h1{
+    margin:0;
     color:white;
     font-size:32px;
     font-style:italic;
+    text-align:center;
 }
 .videos{
     display:flex;
