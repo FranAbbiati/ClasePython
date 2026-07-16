@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='Youtube.css')}}">
+    <title>Artemis II</title>
+</head>
+<body>
+    <header class="encabezado">
+        <a href="{{ url_for('index')}}">
+            <img src="https://ipm.edu.ar/assets/img/logo.png"
+            alt="Logo IPM"
+            class="logo">
+        </a>    
+        <h1>Youtube</h1>
+    </header>
+    <main class="videos">
+        <section class="tarjeta-video">
+            <iframe 
+            src="https://www.youtube.com/embed/B_7EUmCxcvE"
+            title="Lanzamiento Artemis II"
+            frameborder="0"
+            allowfullscreen>
+            </iframe>
+            <h3>
+                Lanzamiento de Artemis II
+            </h3>
+        </section>
+        <section class="tarjeta-video">
+            <iframe 
+            src="https://www.youtube.com/embed/rKhtEkr127Y"
+            title="Artemis II misión lunar"
+            frameborder="0"
+            allowfullscreen>
+            </iframe>
+            <h3>
+                Artemis II - Misión Lunar
+            </h3>
+        </section>
+    </main>
+ <footer>
+        <h5>Creado por: Oriana y Francesca</h5>
+        <h5><a href="{{ url_for('contacto')}}">Contacto</a></h5>
+    </footer>
+</body>
+</html>

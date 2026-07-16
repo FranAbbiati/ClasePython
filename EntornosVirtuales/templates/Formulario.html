@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='Formulario.css')}}">
+    <title>Formulario</title>
+</head>
+<body>
+    <header class="encabezado">
+        <a href="{{ url_for('index')}}">
+            <img src="https://ipm.edu.ar/assets/img/logo.png"
+            alt="Logo IPM"
+            class="logo">
+        </a>    
+        <h1>Formulario</h1>
+    </header>
+    <main>
+        <form class="formulario" action="#" method="get">
+            <label for="nombre">Nombre:</label>
+            <input type="text" 
+               id="nombre" 
+               name="usuario" 
+               placeholder="Escribe tu nombre aquí" 
+               required>
+            <br>
+            <label for="apellido">Apellido:</label>
+            <input type="text" 
+               id="apellido" 
+               name="apellido" 
+               placeholder="Escribe tu apellido aquí"  
+               required>
+            <br>
+            <label for="edad">Edad:</label>
+            <input type="number" 
+               id="edad" 
+               name="edad" 
+               placeholder="Escribe tu edad aquí"  
+               required>
+            <br>
+            <label for="generos">Selecciona tu genero</label><br>
+            <select name="generos" id="generos">
+                <option value="Mujer">Mujer</option>
+                <option value="hombre">Hombre</option>
+                <option value="nodecir">Prefiero no decirlo</option>
+            </select>
+    
+            <br>
+            <label>
+                <input type="checkbox" name="terminosycondiciones" value="aceptado">
+                Acepto los terminos y condiciones
+            </label>
+            <br>
+            <button class="boton" type="submit">Enviar formulario</button>
+        </form>
+    </main>
+   <footer>
+        <h5>Creado por: Oriana y Francesca</h5>
+        <h5><a href="{{ url_for('contacto')}}">Contacto</a></h5>
+    </footer>
+</body>
+</html>

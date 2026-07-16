@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/contacto.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='contacto.css')}}">
     <title>Contacto</title>
 </head>
 <body>
     <header class="encabezado">
-        <a href="./index.html">
+        <a href="{{ url_for('index')}}">
             <img src="https://ipm.edu.ar/assets/img/logo.png"
             alt="Logo IPM"
             class="logo">

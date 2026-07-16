@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luiggi's Restaurante Italiano</title>
-    <link rel="stylesheet" href="../CSS/Menu.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='Menu.css')}}">
 </head>
 <body>
     <header class="encabezado">
-        <a href="./index.html">
+        <a href="{{ url_for('index')}}">
             <img src="https://ipm.edu.ar/assets/img/logo.png"
                  alt="Logo IPM"
                  class="logo">
@@ -306,7 +306,7 @@
     </main>
     <footer>
         <h5>Creado por: Oriana y Francesca</h5>
-        <h5><a href="./contacto.html">Contacto</a></h5>
+        <h5><a href="{{ url_for('contacto')}}">Contacto</a></h5>
     </footer>
 </body>
 </html>
